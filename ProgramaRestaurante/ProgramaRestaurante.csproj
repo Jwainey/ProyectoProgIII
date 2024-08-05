@@ -98,14 +98,14 @@
     <EmbeddedResource Include="ClasePrincipal.resx">
       <DependentUpon>ClasePrincipal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Consultas\ConsultaAlimento - Copia.resx">
-      <DependentUpon>ConsultaSalas.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Consultas\ConsultaAlimento.resx">
       <DependentUpon>ConsultaAlimento.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Consultas\ConsultaCliente.resx">
       <DependentUpon>ConsultaCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\ConsultaSalas.resx">
+      <DependentUpon>ConsultaSalas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Mantenimientos\MantCliente.resx">
       <DependentUpon>MantCliente.cs</DependentUpon>
