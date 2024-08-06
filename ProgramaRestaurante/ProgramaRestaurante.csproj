@@ -67,6 +67,59 @@
     <Compile Include="ClasePrincipal.Designer.cs">
       <DependentUpon>ClasePrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="Consultas\ConsultaProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\ConsultaProductos.Designer.cs">
+      <DependentUpon>ConsultaProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\ConsultaUsuarios.Designer.cs">
+      <DependentUpon>ConsultaUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\ConsultaUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\ConsultaMedidas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\ConsultaCliente - Copia.Designer - Copia %282%29.cs">
+      <DependentUpon>ConsultaMedidas.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\ConsultaCliente - Copia.Designer - Copia - Copia %282%29 - Copia - Copia.cs">
+      <DependentUpon>ConsultaTipoMoneda.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\ConsultaTipoMoneda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\ConsultaProveedores.Designer.cs">
+      <DependentUpon>ConsultaProveedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\ConsultaProveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\ConsultaCliente - Copia.Designer - Copia - Copia %282%29 - Copia.cs">
+      <DependentUpon>ConsultaImpuestos.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\ConsultaCliente - Copia.Designer - Copia - Copia %282%29.cs">
+      <DependentUpon>ConsultaDepartamentos.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\ConsultaCliente - Copia.Designer - Copia - Copia.cs">
+      <DependentUpon>ConsultaMesas.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\ConsultaImpuestos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\ConsultaMesas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas\ConsultaDepartamentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Consultas\ConsultaSalas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,29 +139,44 @@
     <Compile Include="Consultas\ConsultaCliente.Designer.cs">
       <DependentUpon>ConsultaCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="Mantenimientos\MantCliente.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Mantenimientos\MantCliente.Designer.cs">
-      <DependentUpon>MantCliente.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <None Include="Resources\fondo winform.jpg" />
     <EmbeddedResource Include="ClasePrincipal.resx">
       <DependentUpon>ClasePrincipal.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\ConsultaProductos.resx">
+      <DependentUpon>ConsultaProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\ConsultaUsuarios.resx">
+      <DependentUpon>ConsultaUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\ConsultaMedidas.resx">
+      <DependentUpon>ConsultaMedidas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Consultas\ConsultaAlimento.resx">
       <DependentUpon>ConsultaAlimento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\ConsultaTipoMoneda.resx">
+      <DependentUpon>ConsultaTipoMoneda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\ConsultaProveedores.resx">
+      <DependentUpon>ConsultaProveedores.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Consultas\ConsultaCliente.resx">
       <DependentUpon>ConsultaCliente.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\ConsultaImpuestos.resx">
+      <DependentUpon>ConsultaImpuestos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\ConsultaMesas.resx">
+      <DependentUpon>ConsultaMesas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas\ConsultaDepartamentos.resx">
+      <DependentUpon>ConsultaDepartamentos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Consultas\ConsultaSalas.resx">
       <DependentUpon>ConsultaSalas.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Mantenimientos\MantCliente.resx">
-      <DependentUpon>MantCliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -136,6 +204,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\6512ca0c86690 %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Mantenimientos\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

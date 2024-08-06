@@ -1,6 +1,6 @@
 ﻿namespace ProgramaRestaurante.Consultas
 {
-    partial class ConsultaSalas
+    partial class MatenimientoMesas
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.label3 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.comboBox6 = new System.Windows.Forms.ComboBox();
@@ -37,10 +36,15 @@
             this.comboBox5 = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.iconButton3 = new FontAwesome.Sharp.IconButton();
-            this.iconButton2 = new FontAwesome.Sharp.IconButton();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.iconButton3 = new FontAwesome.Sharp.IconButton();
+            this.iconButton2 = new FontAwesome.Sharp.IconButton();
+            this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -56,24 +60,6 @@
             this.panel2.Size = new System.Drawing.Size(796, 77);
             this.panel2.TabIndex = 2;
             // 
-            // iconButton1
-            // 
-            this.iconButton1.Enabled = false;
-            this.iconButton1.FlatAppearance.BorderSize = 0;
-            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton1.Font = new System.Drawing.Font("Constantia", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.DoorOpen;
-            this.iconButton1.IconColor = System.Drawing.Color.Black;
-            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.IconSize = 46;
-            this.iconButton1.Location = new System.Drawing.Point(-12, 10);
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(350, 51);
-            this.iconButton1.TabIndex = 0;
-            this.iconButton1.Text = "Consulta Salas";
-            this.iconButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.iconButton1.UseVisualStyleBackColor = true;
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -84,6 +70,7 @@
             this.label3.Size = new System.Drawing.Size(122, 16);
             this.label3.TabIndex = 6;
             this.label3.Text = "Nombre de sala: *";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label9
             // 
@@ -147,6 +134,10 @@
             this.panel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.Controls.Add(this.textBox3);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.textBox2);
+            this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.iconButton3);
             this.panel1.Controls.Add(this.iconButton2);
             this.panel1.Controls.Add(this.dataGridView1);
@@ -164,6 +155,58 @@
             this.panel1.Size = new System.Drawing.Size(800, 450);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(236, 125);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(519, 302);
+            this.dataGridView1.TabIndex = 20;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(23, 128);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(191, 20);
+            this.textBox1.TabIndex = 19;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(23, 176);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(191, 20);
+            this.textBox2.TabIndex = 24;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.Location = new System.Drawing.Point(20, 154);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(130, 16);
+            this.label1.TabIndex = 23;
+            this.label1.Text = "Nombre de mesa: *";
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(23, 224);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(191, 20);
+            this.textBox3.TabIndex = 26;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label2.Location = new System.Drawing.Point(20, 202);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(133, 16);
+            this.label2.TabIndex = 25;
+            this.label2.Text = "Asientos en mesa: *";
             // 
             // iconButton3
             // 
@@ -193,31 +236,34 @@
             this.iconButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton2.UseVisualStyleBackColor = true;
             // 
-            // dataGridView1
+            // iconButton1
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(236, 125);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(519, 302);
-            this.dataGridView1.TabIndex = 20;
+            this.iconButton1.Enabled = false;
+            this.iconButton1.FlatAppearance.BorderSize = 0;
+            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton1.Font = new System.Drawing.Font("Constantia", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.DoorOpen;
+            this.iconButton1.IconColor = System.Drawing.Color.Black;
+            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton1.IconSize = 46;
+            this.iconButton1.Location = new System.Drawing.Point(-12, 10);
+            this.iconButton1.Name = "iconButton1";
+            this.iconButton1.Size = new System.Drawing.Size(350, 51);
+            this.iconButton1.TabIndex = 0;
+            this.iconButton1.Text = "Consulta Mesas";
+            this.iconButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.iconButton1.UseVisualStyleBackColor = true;
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(23, 125);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(191, 20);
-            this.textBox1.TabIndex = 19;
-            // 
-            // ConsultaSalas
+            // ConsultaMesas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.panel1);
-            this.Name = "ConsultaSalas";
+            this.Name = "ConsultaMesas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Consulta Salas";
+            this.Text = "Consulta Mesas";
             this.TopMost = true;
             this.Load += new System.EventHandler(this.ConsultaCliente_Load);
             this.panel2.ResumeLayout(false);
@@ -244,5 +290,9 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private FontAwesome.Sharp.IconButton iconButton3;
         private FontAwesome.Sharp.IconButton iconButton2;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label1;
     }
 }

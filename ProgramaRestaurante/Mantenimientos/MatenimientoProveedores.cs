@@ -9,11 +9,12 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MaterialSkin;
 using MaterialSkin.Controls;
+
 namespace ProgramaRestaurante.Consultas
 {
-    public partial class ConsultaAlimento : Form
+    public partial class MatenimientoProveedores : Form
     {
-        public ConsultaAlimento()
+        public MatenimientoProveedores()
         {
             InitializeComponent();
         }
@@ -69,6 +70,11 @@ namespace ProgramaRestaurante.Consultas
         }
 
         private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox10_TextChanged(object sender, EventArgs e)
         {
 
         }

@@ -53,7 +53,9 @@ namespace ProgramaRestaurante
 
         private void iconButton11_Click(object sender, EventArgs e)
         {
-
+            ConsultaTipoMoneda venta = new ConsultaTipoMoneda();
+            venta.Show();
+            this.BringToFront();
         }
 
         private void iconButton1_Click(object sender, EventArgs e)
@@ -100,7 +102,9 @@ namespace ProgramaRestaurante
 
         private void iconButton8_Click(object sender, EventArgs e)
         {
-
+            ConsultaDepartamentos venta = new ConsultaDepartamentos();
+            venta.Show();
+            this.BringToFront();
         }
 
         private void iconButton33_Click(object sender, EventArgs e)
@@ -123,6 +127,48 @@ namespace ProgramaRestaurante
         private void iconButton22_Click(object sender, EventArgs e)
         {
             ConsultaSalas venta = new ConsultaSalas();
+            venta.Show();
+            this.BringToFront();
+        }
+
+        private void iconButton21_Click(object sender, EventArgs e)
+        {
+            ConsultaMesas venta = new ConsultaMesas();
+            venta.Show();
+            this.BringToFront();
+        }
+
+        private void iconButton19_Click(object sender, EventArgs e)
+        {
+            ConsultaImpuestos venta = new ConsultaImpuestos();
+            venta.Show();
+            this.BringToFront();
+        }
+
+        private void iconButton18_Click(object sender, EventArgs e)
+        {
+            ConsultaProveedores venta = new ConsultaProveedores();
+            venta.Show();
+            this.BringToFront();
+        }
+
+        private void iconButton16_Click(object sender, EventArgs e)
+        {
+            ConsultaMedidas venta = new ConsultaMedidas();
+            venta.Show();
+            this.BringToFront();
+        }
+
+        private void iconButton15_Click(object sender, EventArgs e)
+        {
+            ConsultaUsuarios venta = new ConsultaUsuarios();
+            venta.Show();
+            this.BringToFront();
+        }
+
+        private void iconButton14_Click(object sender, EventArgs e)
+        {
+            ConsultaProductos venta = new ConsultaProductos();
             venta.Show();
             this.BringToFront();
         }

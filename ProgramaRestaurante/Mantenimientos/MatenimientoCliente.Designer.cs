@@ -1,6 +1,6 @@
 ﻿namespace ProgramaRestaurante.Consultas
 {
-    partial class ConsultaCliente
+    partial class MatenimientoCliente
     {
         /// <summary>
         /// Required designer variable.

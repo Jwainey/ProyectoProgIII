@@ -1,6 +1,6 @@
 ﻿namespace ProgramaRestaurante.Consultas
 {
-    partial class ConsultaSalas
+    partial class ConsultaImpuestos
     {
         /// <summary>
         /// Required designer variable.
@@ -66,11 +66,11 @@
             this.iconButton1.IconColor = System.Drawing.Color.Black;
             this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton1.IconSize = 46;
-            this.iconButton1.Location = new System.Drawing.Point(-12, 10);
+            this.iconButton1.Location = new System.Drawing.Point(3, 10);
             this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(350, 51);
+            this.iconButton1.Size = new System.Drawing.Size(430, 51);
             this.iconButton1.TabIndex = 0;
-            this.iconButton1.Text = "Consulta Salas";
+            this.iconButton1.Text = "Consulta Departamentos";
             this.iconButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton1.UseVisualStyleBackColor = true;
             // 
@@ -81,9 +81,9 @@
             this.label3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label3.Location = new System.Drawing.Point(20, 106);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(122, 16);
+            this.label3.Size = new System.Drawing.Size(183, 16);
             this.label3.TabIndex = 6;
-            this.label3.Text = "Nombre de sala: *";
+            this.label3.Text = "Nombre de departamento: *";
             // 
             // label9
             // 
@@ -175,7 +175,7 @@
             this.iconButton3.Name = "iconButton3";
             this.iconButton3.Size = new System.Drawing.Size(95, 45);
             this.iconButton3.TabIndex = 22;
-            this.iconButton3.Text = "Limpiar";
+            this.iconButton3.Text = "Guardar";
             this.iconButton3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton3.UseVisualStyleBackColor = true;
             // 
@@ -208,16 +208,16 @@
             this.textBox1.Size = new System.Drawing.Size(191, 20);
             this.textBox1.TabIndex = 19;
             // 
-            // ConsultaSalas
+            // ConsultaDepartamentos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.panel1);
-            this.Name = "ConsultaSalas";
+            this.Name = "ConsultaDepartamentos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Consulta Salas";
+            this.Text = "Consulta Departamentos";
             this.TopMost = true;
             this.Load += new System.EventHandler(this.ConsultaCliente_Load);
             this.panel2.ResumeLayout(false);

@@ -9,13 +9,14 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MaterialSkin;
 using MaterialSkin.Controls;
+
 namespace ProgramaRestaurante.Consultas
 {
-    public partial class ConsultaAlimento : Form
+    public partial class ConsultaProductos : Form
     {
-        public ConsultaAlimento()
+        public ConsultaProductos()
         {
-            InitializeComponent();
+            InitializeComponent();           
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -71,6 +72,25 @@ namespace ProgramaRestaurante.Consultas
         private void label6_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void iconButton2_Click(object sender, EventArgs e)
+        {
+            // Crear una instancia del OpenFileDialog
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+
+            // Configurar el filtro para mostrar solo archivos de imagen
+            openFileDialog.Filter = "Archivos de imagen (*.jpg, *.jpeg, *.png, *.bmp)|*.jpg;*.jpeg;*.png;*.bmp";
+
+            // Mostrar el cuadro de diálogo y verificar si el usuario seleccionó un archivo
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                // Obtener la ruta del archivo seleccionado
+                string filePath = openFileDialog.FileName;
+
+                // Aquí puedes cargar la imagen en un PictureBox, por ejemplo
+                pictureBox.Image = Image.FromFile(filePath);
+            }
         }
     }
 }

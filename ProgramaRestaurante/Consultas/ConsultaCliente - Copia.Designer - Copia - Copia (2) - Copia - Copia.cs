@@ -1,6 +1,6 @@
 ﻿namespace ProgramaRestaurante.Consultas
 {
-    partial class ConsultaSalas
+    partial class ConsultaTipoMoneda
     {
         /// <summary>
         /// Required designer variable.
@@ -37,6 +37,10 @@
             this.comboBox5 = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.iconButton3 = new FontAwesome.Sharp.IconButton();
             this.iconButton2 = new FontAwesome.Sharp.IconButton();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -66,11 +70,11 @@
             this.iconButton1.IconColor = System.Drawing.Color.Black;
             this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton1.IconSize = 46;
-            this.iconButton1.Location = new System.Drawing.Point(-12, 10);
+            this.iconButton1.Location = new System.Drawing.Point(3, 10);
             this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(350, 51);
+            this.iconButton1.Size = new System.Drawing.Size(489, 51);
             this.iconButton1.TabIndex = 0;
-            this.iconButton1.Text = "Consulta Salas";
+            this.iconButton1.Text = "Consulta de Tipo de Moneda";
             this.iconButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton1.UseVisualStyleBackColor = true;
             // 
@@ -81,9 +85,9 @@
             this.label3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label3.Location = new System.Drawing.Point(20, 106);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(122, 16);
+            this.label3.Size = new System.Drawing.Size(148, 16);
             this.label3.TabIndex = 6;
-            this.label3.Text = "Nombre de sala: *";
+            this.label3.Text = "Nombre de moneda: *";
             // 
             // label9
             // 
@@ -147,6 +151,10 @@
             this.panel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.Controls.Add(this.textBox3);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.textBox2);
+            this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.iconButton3);
             this.panel1.Controls.Add(this.iconButton2);
             this.panel1.Controls.Add(this.dataGridView1);
@@ -165,6 +173,42 @@
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(23, 252);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(191, 20);
+            this.textBox3.TabIndex = 26;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label2.Location = new System.Drawing.Point(20, 233);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(149, 16);
+            this.label2.TabIndex = 25;
+            this.label2.Text = "Simbolo de moneda: *";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(23, 188);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(191, 20);
+            this.textBox2.TabIndex = 24;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.Location = new System.Drawing.Point(20, 169);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(134, 16);
+            this.label1.TabIndex = 23;
+            this.label1.Text = "Siglas de moneda: *";
+            // 
             // iconButton3
             // 
             this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.Trash;
@@ -175,7 +219,7 @@
             this.iconButton3.Name = "iconButton3";
             this.iconButton3.Size = new System.Drawing.Size(95, 45);
             this.iconButton3.TabIndex = 22;
-            this.iconButton3.Text = "Limpiar";
+            this.iconButton3.Text = "Guardar";
             this.iconButton3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton3.UseVisualStyleBackColor = true;
             // 
@@ -208,16 +252,16 @@
             this.textBox1.Size = new System.Drawing.Size(191, 20);
             this.textBox1.TabIndex = 19;
             // 
-            // ConsultaSalas
+            // ConsultaTipoMoneda
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.panel1);
-            this.Name = "ConsultaSalas";
+            this.Name = "ConsultaTipoMoneda";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Consulta Salas";
+            this.Text = "Consulta Tipo de Moneda";
             this.TopMost = true;
             this.Load += new System.EventHandler(this.ConsultaCliente_Load);
             this.panel2.ResumeLayout(false);
@@ -244,5 +288,9 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private FontAwesome.Sharp.IconButton iconButton3;
         private FontAwesome.Sharp.IconButton iconButton2;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label1;
     }
 }

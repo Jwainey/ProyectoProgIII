@@ -542,6 +542,7 @@
             this.iconButton14.Text = "Gestion de Productos";
             this.iconButton14.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton14.UseVisualStyleBackColor = false;
+            this.iconButton14.Click += new System.EventHandler(this.iconButton14_Click);
             // 
             // iconButton15
             // 
@@ -564,6 +565,7 @@
             this.iconButton15.Text = "Gestion de Usuarios";
             this.iconButton15.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton15.UseVisualStyleBackColor = false;
+            this.iconButton15.Click += new System.EventHandler(this.iconButton15_Click);
             // 
             // iconButton16
             // 
@@ -586,6 +588,7 @@
             this.iconButton16.Text = "Gestion de Medidas";
             this.iconButton16.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton16.UseVisualStyleBackColor = false;
+            this.iconButton16.Click += new System.EventHandler(this.iconButton16_Click);
             // 
             // iconButton17
             // 
@@ -631,6 +634,7 @@
             this.iconButton18.Text = "Gestion de Proveedor";
             this.iconButton18.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton18.UseVisualStyleBackColor = false;
+            this.iconButton18.Click += new System.EventHandler(this.iconButton18_Click);
             // 
             // iconButton19
             // 
@@ -653,6 +657,7 @@
             this.iconButton19.Text = "Gestion de Impuestos";
             this.iconButton19.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton19.UseVisualStyleBackColor = false;
+            this.iconButton19.Click += new System.EventHandler(this.iconButton19_Click);
             // 
             // iconButton20
             // 
@@ -698,6 +703,7 @@
             this.iconButton21.Text = "Gestion de Mesas";
             this.iconButton21.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton21.UseVisualStyleBackColor = false;
+            this.iconButton21.Click += new System.EventHandler(this.iconButton21_Click);
             // 
             // iconButton22
             // 

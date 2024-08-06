@@ -9,11 +9,12 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MaterialSkin;
 using MaterialSkin.Controls;
+
 namespace ProgramaRestaurante.Consultas
 {
-    public partial class ConsultaAlimento : Form
+    public partial class MatenimientoTipoMoneda : Form
     {
-        public ConsultaAlimento()
+        public MatenimientoTipoMoneda()
         {
             InitializeComponent();
         }
